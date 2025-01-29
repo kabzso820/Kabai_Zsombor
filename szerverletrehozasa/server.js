@@ -15,6 +15,10 @@ const db = mysql.createConnection({
     database: "kozutak",
 });
 
+app.get("/", (req,res) => {
+    res.send("Fut a backend");
+})
+
 app.listen(3001, () => {
     console.log("Server is running on port 3001");
 });
